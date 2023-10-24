@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="./styles/style.css" >
+    <link rel="images" href="./images/">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <img id="calc" src="./images/love calculator.ico" alt="love calculator" class="ment">
+            
+        </div>
+        <div class="cal">
+            <p >CLICK IMAGE!!</p>
+        </div>
+    </main>
+
+    <script>
+
+        const calculaTor = document.getElementById("calc");
+        function love() {
+            let a = prompt("Enter your name: ");   
+            let b = prompt("Enter your partners name: ");           
+
+            let n = Math.random(); // Here random value ranging from 0 to almost 1 is being assigned to the variable n
+            // n = n * 100; // Here the random values are being multiplied by 100 so that it ranges from q to 100
+            n = Math.floor(n * 100);     
+            // alert("Love percentage is " + Math.floor(n) + "%"); // here we pretend whatever random percentage is shown is the love percentage of the couple, we also remove the decimal numbers by using Math.floor
+            if(n > 60) {
+                alert(`${a}` + " loves " + `${b}` + " dearly and is ready for marraige, love percentage is " + n + "%");
+            } else {
+                alert(`${a}` + " and " + `${b}` + " your love percentage is " + n + "% you may want to wait a while before marriage");
+            }
+        };
+
+        calculaTor.addEventListener("click", love);
+    
+    </script>
+</body>
+</html>

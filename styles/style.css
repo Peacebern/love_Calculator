@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* max-width: 1600px; */
+    max-width: 100%;
+}
+body {
+    background-color: black;
+    /* background-size: cover; */
+}
+
+.ment {
+    align-items: center;
+    border-radius: 100%;
+
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+
+}
+
+.cal {
+    color:#fff;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;align-self: center;
+    text-align: center;
+}
